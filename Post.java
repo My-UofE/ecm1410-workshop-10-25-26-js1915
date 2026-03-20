@@ -44,6 +44,22 @@ public class Post implements Serializable {
         }
     }
 
+    public int getPostID() {
+        return this.postID;
+    }
+    public String getAuthor() {
+        return this.author;
+    }
+    public String getSubject() {
+        return this.subject;
+    }
+    public String getMessage() {
+        return this.message;
+    }
+    public int getDate() {
+        return this.date;
+    }
+
     public String toString() {
         String result = String.format("Post[postID=%d, author=\"%s\", subject=\"%s\", message=\"%s\", date=%d, tags=[], parentID=-1]", 
                                 postID, author, subject, message.replace("\n", "\\n"), date);
